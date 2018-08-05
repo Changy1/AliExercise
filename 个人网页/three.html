@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				font-family: "微软雅黑";
+			}
+			input{
+				border: 0;
+			}
+			a{
+				text-decoration: none;
+				color: white;
+			}
+			body{
+				background: rgb(7,84,152) url(images/top.jpg) no-repeat 250px 0;
+			}
+			.container{
+				width: 1000px;
+				margin:0 auto;
+			}
+			.header{
+				height: 200px;
+			}
+			.header-top{
+				line-height: 120px;
+				font-size: 50px;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				color: white;
+			}
+			.header-bottom li{
+				float: left;
+				list-style: none;
+				font-size: 18px;
+				margin-right: 35px;
+			}
+			.body{
+				padding: 20px;
+				height: 2160px;
+				background: rgba(46,111,168,0.5);
+			}
+			.body-container{
+				width: 900px;
+				height: 2100px;
+				padding: 30px;
+				background: rgba(79,134,182,0.5);
+				box-shadow: 0px 0px 4px rgb(7,84,152);
+			}
+			.body-container b{
+				display: inline-block;
+				background: #2a7497;
+				width: 200px;
+				padding: 10px 0;
+				margin-bottom: 20px;
+				text-align: center;
+				font-size: 22px;
+				color: white;
+				border-left: #dae1e4 6px solid;
+				border-radius: 0 30px 30px 0;
+				box-shadow: #21566f 1px 1px 1px;
+			}
+			.body-container .span{
+				float: right;
+				margin-top: 20px;
+				font-size: 14px;
+				color: white;
+				text-shadow: rgba(7, 84, 152, 0.71) 1px 1px 1px;
+			}
+			.body-header{
+				margin: 20px 0;
+			}
+			.body-header td{
+				width: 225px;
+				height: 200px;
+			}
+			.body-header-td1{
+				background: url(images/p01.jpg) no-repeat;
+				background-size: 350px 200px;
+			}
+			.body-header-td2{
+				background: url(images/p02.jpg) no-repeat;
+				background-size: 250px 200px;
+			}
+			.body-header-td3{
+				background: url(images/p03.jpg) no-repeat;
+				background-size: 250px 200px;
+			}
+			.body-header-td4{
+				background: white;
+			}
+			.body-header-td5{
+				background: url(images/p04.jpg) no-repeat;
+				background-size: 300px 200px;
+			}
+			.body-header-td6{
+				background: white;
+			}
+			.body-header-td7{
+				background: url(images/p05.jpg) no-repeat;
+				background-size: 240px 200px;
+			}
+			.body-header-td8{
+				background: url(images/p06.jpg) no-repeat;
+				background-size: 270px 200px;
+			}
+			.body-footer-container{
+				position: relative;
+				height: 220px;
+				width: 902px;
+			}
+			.body-footer-div{
+				position: absolute;
+				margin-left: 120px;
+				margin-top: -38px;
+				height: 10px;
+				width: 10px;
+				background: rgb(70,164,218);
+				border-style: solid;
+				border-width: 3px;
+				border-color: rgb(175,220,248);
+				border-radius: 50%;
+			}
+			.body-footer-diver{
+				position: absolute;
+				margin-left: -53px;
+				margin-top: -105px;
+				border-color: transparent rgb(87,157,197) transparent transparent;
+				border-width: 13px;
+				border-style: solid;
+			}
+			.body-footer-container-left{
+				float: left;
+				height: 220px;
+				width: 125px;
+				border-width: 0 5px 0 0;
+				border-style: solid;
+				border-color: rgb(175,220,248);
+			}
+			.body-footer-container-left span{
+				font-size: 14px;
+				color: rgb(236,236,236);
+			}
+			.body-footer-container-left p{
+				font-size: 25px;
+				color: rgb(108,191,238);
+				text-align: right;
+				margin-right: 30px;
+			}
+			.body-footer-container-right{
+				float: left;
+				margin-left: 30px;
+				padding: 30px;
+				height: 150px;
+				width: 682px;
+				border-radius: 5px;
+				background: rgb(87,157,197);
+			}
+			.body-footer-container-right img{
+				height: 120px;
+				width: 200px;
+				display: block;
+				float: left;
+				margin-right: 20px;
+			}
+			.body-footer-container-right h2{
+				font-size: 16px;
+				color: white;
+				margin-bottom: 8px;
+				text-shadow: 1px 1px #333;
+			} 
+			.body-footer-container-right span{
+				font-size: 14px;
+				color: white;
+			}
+			.body-footer-container-right input{
+				height: 30px;
+				width: 100px;
+				background: rgb(7,84,152);
+				border-radius: 5px;
+				color: white;
+				display: block;
+				float: right;
+				margin-top: 40px;
+			}
+			.body-footer-container-right input:hover{
+				cursor: pointer;
+			}
+			.body-bottom{
+				width: 280px;
+				margin: 20px auto;
+			}
+			.body-bottom a{
+				display: inline-block;
+				line-height: 28px;
+				width: 28px;
+				border: rgb(175,220,248) solid 1px;
+				border-radius: 50%;
+				color: rgb(175,220,248);
+				font-size: 14px;
+				font-weight: bold;
+				text-align: center;
+			}
+			.body-bottom .this{
+				border: none;
+				background: rgb(42,69,93);
+			}
+			.body-bottom a:hover{
+				background: rgb(42,69,93);
+			}
+			.footer{
+				line-height: 60px;
+			}
+			.footer p{
+				color: white;
+				font-size: 15px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<p class="header-top">CHANGYI·个人博客</p>
+				<ul class="header-bottom">
+					<li><a href="index.html"">首页</a></li>
+					<li><a href="isme.html">关于我</a></li>
+					<li><a href="three.html">慢生活</a></li>
+					<li><a href="four.html">碎言碎语</a></li>
+					<li><a href="five.html">模板分享</a></li>
+					<li><a href="six.html">学无止境</a></li>
+					<li><a href="seven.html">留言</a></li>
+				</ul>
+			</div>
+			<div class="body">
+				<div class="body-container">
+					<h2>
+						<b>慢生活</b>
+						<span class="span">“慢生活”不是懒惰，放慢速度不是拖延时间，而是让我们在生活中寻找到平衡。</span>
+					</h2>
+					<div class="body-header">
+						<table cellspacing="0">
+							<tr>
+								<td class="body-header-td1"></td>
+								<td class="body-header-td2"></td>
+								<td class="body-header-td3"></td>
+								<td class="body-header-td4"></td>
+							</tr>
+							<tr>
+								<td class="body-header-td5"></td>
+								<td class="body-header-td6"></td>
+								<td class="body-header-td7"></td>
+								<td class="body-header-td8"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="body-footer">
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t03.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t01.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t02.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t03.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t01.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t02.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t03.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+					</div>
+					<div class="body-bottom">
+						<a href="dd">107</a>
+						<a class="this" href="dd">1</a>
+						<a href="dd">2</a>
+						<a href="dd">3</a>
+						<a href="dd">4</a>
+						<a href="dd">5</a>
+						<a href="dd">></a>
+						<a href="dd">>></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p>Design by DanceSmile 蜀ICP备11002373号-1</p>
+			</div>
+		</div>
+	</body>
+</html>

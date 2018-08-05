@@ -1,0 +1,342 @@
+<html>
+	<head>
+		<title>网站主页</title>
+		<meta charset="utf-8">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				font-family: "微软雅黑";
+			}
+			input{
+				border: 0;
+			}
+			a{
+				text-decoration: none;
+				color: white;
+			}
+			body{
+				background: rgb(7,84,152) url(images/top.jpg) no-repeat 250px 0;
+			}
+			.container{
+				width: 1000px;
+				margin:0 auto;
+			}
+			.header{
+				height: 200px;
+			}
+			.header-top{
+				line-height: 120px;
+				font-size: 50px;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				color: white;
+			}
+			.header-bottom li{
+				float: left;
+				list-style: none;
+				font-size: 18px;
+				margin-right: 35px;
+			}
+			.body{
+				padding: 20px;
+				height: 2060px;
+				background: rgba(46,111,168,0.5);
+			}
+			.body-container{
+				width: 960px;
+				height:2060px;
+				background: rgba(79,134,182,0.5);
+				box-shadow: 0px 0px 4px rgb(7,84,152);
+			}
+			.body-header{
+				margin: 21px;
+				display: inline-block;
+			}
+			.body-header li{
+				background: rgb(236,236,236);
+				float: left;
+				list-style: none;
+				height: 430px;
+				width: 270px;
+				border: solid 10px white;
+				margin: 8px;
+			}
+			.body-header img{
+				width: 270px;
+				height: 255px;
+			}
+			.body-header div{
+				margin: 25px 12px;
+				text-align: center;
+			}
+			.body-header a{
+				width: 236px;
+				display: inline-block;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-weight: bold;
+				color: rgb(34,96,57);
+			}
+			.body-header p{
+				font-size: 14px;
+				color: rgb(102,102,102);
+				line-height: 22px;
+				text-align: left;
+				margin-top: 15px;
+			}
+			.body-footer-container{
+				position: relative;
+				height: 220px;
+				width: 902px;
+				margin: 0 29px;
+			}
+			.body-footer-div{
+				position: absolute;
+				margin-left: 120px;
+				margin-top: -38px;
+				height: 10px;
+				width: 10px;
+				background: rgb(70,164,218);
+				border-style: solid;
+				border-width: 3px;
+				border-color: rgb(175,220,248);
+				border-radius: 50%;
+			}
+			.body-footer-diver{
+				position: absolute;
+				margin-left: -53px;
+				margin-top: -105px;
+				border-color: transparent rgb(87,157,197) transparent transparent;
+				border-width: 13px;
+				border-style: solid;
+			}
+			.body-footer-container-left{
+				float: left;
+				height: 220px;
+				width: 125px;
+				border-width: 0 5px 0 0;
+				border-style: solid;
+				border-color: rgb(175,220,248);
+			}
+			.body-footer-container-left span{
+				font-size: 14px;
+				color: rgb(236,236,236);
+			}
+			.body-footer-container-left p{
+				font-size: 25px;
+				color: rgb(108,191,238);
+				text-align: right;
+				margin-right: 30px;
+			}
+			.body-footer-container-right{
+				float: left;
+				margin-left: 30px;
+				padding: 30px;
+				height: 150px;
+				width: 682px;
+				border-radius: 5px;
+				background: rgb(87,157,197);
+			}
+			.body-footer-container-right img{
+				height: 120px;
+				width: 200px;
+				display: block;
+				float: left;
+				margin-right: 20px;
+			}
+			.body-footer-container-right h2{
+				font-size: 16px;
+				color: white;
+				margin-bottom: 8px;
+				text-shadow: 1px 1px #333;
+			} 
+			.body-footer-container-right span{
+				font-size: 14px;
+				color: white;
+			}
+			.body-footer-container-right input{
+				height: 30px;
+				width: 100px;
+				background: rgb(7,84,152);
+				border-radius: 5px;
+				color: white;
+				display: block;
+				float: right;
+				margin-top: 40px;
+			}
+			.body-footer-container-right input:hover{
+				cursor: pointer;
+			}
+			.footer{
+				line-height: 60px;
+			}
+			.footer p{
+				color: white;
+				font-size: 15px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<p class="header-top">CHANGYI·个人博客</p>
+				<ul class="header-bottom">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="isme.html">关于我</a></li>
+					<li><a href="three.html">慢生活</a></li>
+					<li><a href="four.html">碎言碎语</a></li>
+					<li><a href="five.html">模板分享</a></li>
+					<li><a href="six.html">学无止境</a></li>
+					<li><a href="seven.html">留言</a></li>
+				</ul>
+			</div>
+			<div class="body">
+				<div class="body-container">
+					<ul class="body-header">
+						<li>
+							<img src="images/t01.jpg">
+							<div>
+								<a>灯具公司复古风格PSD设计稿</a>
+								<p>此模板为PSD设计稿，复古风格。首页主要突出产品，以及公司简介。手绘灯作为头部背景图片，这个比较特别。html可以做出灯一闪一闪的效果，或者说旁边有个按钮...</p>
+							</div>
+						</li>
+						<li>
+							<img src="images/t02.jpg">
+							<div>
+								<a>个人博客模板古典系列之——江南墨画啊啊啊啊</a>
+								<p>一共是四个页面，首页，图文列表，图片列表，文字内容。此模板风格为中国古典风格，山水画墨迹成就一幅江南墨卷。页面首页设计较为简单，突出文章重点。图文列表显示...</p>
+							</div>
+						</li>
+						<li>
+							<img src="images/t03.jpg">
+							<div>
+								<a>美丽的茧</a>
+								<p>让世界拥有它的脚步，让我保有我的茧。当溃烂已极的心灵再不想做一丝一毫的思索时，就让我静静回到我的茧内，以回忆为睡榻，以悲哀为覆被，这是我唯一的美丽。</p>
+							</div>
+						</li>
+					</ul>
+					<div class="body-footer">
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t03.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t01.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t02.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t03.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t01.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t02.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+						<div class="body-footer-container">
+							<div class="body-footer-container-left">
+								<p>
+								<span>08-08</span><br>
+								2017
+								</p>
+								<div class="body-footer-div"></div>
+							</div>
+							<div class="body-footer-container-right">
+								<h2>三步实现滚动条触动css动画效果</h2>
+								<img src="images/t03.jpg">
+								<span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</span>
+								<input type="button" value="阅读全文>>">
+								<div class="body-footer-diver"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p>Design by DanceSmile 蜀ICP备11002373号-1</p>
+			</div>
+		</div>
+	</body>
+</html>
