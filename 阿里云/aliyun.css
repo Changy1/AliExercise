@@ -1,0 +1,901 @@
+*{
+				margin: 0;
+				padding: 0;
+				font-size: 14px;
+				font-family: "微软雅黑";
+				color: white;
+			} 
+			a{
+				text-decoration: none;
+			}
+			li,input{
+				list-style: none;
+				border: none;
+			}
+			.fixfather::after{
+				content: "";
+				clear: both;
+				display: block;
+				height: 0;
+				overflow: hidden;
+			}
+			.header{
+				height: 640px;
+				background: url(image/top.jpg) no-repeat center;
+				background-size: 122%;
+			}
+			.header-top{
+				height: 50px;
+				border-bottom: rgb(47,51,55) solid 2px;
+				overflow: hidden;
+			}
+			.header-hover:hover{
+				background: rgb(55,61,65);
+			}
+			.header-hover:hover .header-body-header{
+				border: none;
+				height: 52px;
+			}
+			.header-top-img{
+				float: left;
+				padding: 15px;
+				height:20px;
+				width: 20px;
+				background: url(image/tu1.png) no-repeat center;
+				background-size: 20px;
+				border-right: rgb(47,51,55) solid 2px;
+			}
+			.header-top-one{
+				position: absolute;
+				bottom: 15px;
+				left: 15px;
+			}
+			.header-top-img:hover .header-top-ul1{
+				display: block;
+			}
+			.header-top-img:hover{
+				background-color: rgb(51,205,229);
+			}
+			.header-top-ul1{
+				display: none;
+				z-index: 1;
+				background: rgb(39,43,46);
+				position: absolute;
+				width: 200px;
+				top: 50px;
+				left: 0;
+				bottom: 0;
+				border-right: rgb(47,51,55) solid 1px;
+			}
+			.header-top-li1{
+				padding: 15px;
+				cursor: pointer;
+			}
+			.header-top-li1 span{
+				font-size: 13px;
+				float: right;
+			}
+			.header-top-li1:hover{
+				color: rgb(51,205,229);
+			}
+			.header-top-li1:hover .header-top-ul2{
+				display: block;
+			}
+			.header-top-ul2{
+				display: none;
+				z-index: 2;
+				background: rgb(48,53,56);
+				position: absolute;
+				width: 300px;
+				top: 0px;
+				left: 201px;
+				bottom: 0;
+			}
+			.header-top-li2{
+				margin: 15px;
+				cursor: pointer;
+			} 
+			.header-top-li2:hover{
+				color: rgb(51,205,229);
+			}
+			.header-top-img img{
+				width: 18px;
+				height: 14px;
+			}
+			.header-top-name{
+				float: left;
+				position: relative;
+				padding: 15px;
+			}
+			.header-top-name img{
+				width: 85px;
+				height: 20px;
+			}
+			.header-top-gif{
+				position: absolute;
+				left: 15px;
+				top: 15px;
+			}
+			.header-top-nav li{
+				float: right;
+				list-style: none;
+				margin: 10px 15px;
+				line-height: 30px;
+				color: white;
+				cursor: pointer;
+			}
+			.header-top-nav li:hover{
+				color: rgb(0,193,222);
+			}
+			.header-top-nav img{
+				margin-right: 10px;
+				width: 17px;
+				height: 17px;
+				vertical-align: middle;
+			}
+			.header-top-china{
+				float: right;
+				line-height: 50px;
+				width: 70px;
+				color: white;
+			}
+			.header-top-input{
+				float: right;
+				height: 50px;
+				width: 185px;
+				padding-left: 15px;
+				margin-right: 20px;
+				border: none;
+				background: rgba(255,255,255,0.1);
+				color: white;
+				outline: none;
+			}
+			.header-top .glass{
+				position: absolute;
+				top: 18px;
+				right: 510px;
+				width: 15px;
+				height: 15px;
+			}
+			.header-body-header{
+				position: relative;
+				height: 50px;
+				border-bottom: rgb(47,51,55) solid 2px;
+			}
+			.header-body-left{
+				float: left;
+			}
+			.header-body-left li{
+				float: left;
+				padding-top: 16px;
+				list-style: none;
+				margin-left: 30px;
+				cursor: pointer;
+			}
+			.header-body-left li:hover .header-body-three{
+				display: block;
+			}
+			.header-body-three{
+				display: block;
+				margin: 0 auto;
+				width: 0;
+				height: 0;
+				border-color: transparent transparent white transparent;
+				border-width: 7px;
+				border-style: solid;
+				display: none;
+			}
+			.header-body-left li:hover{
+				color: rgb(0,193,222);
+			}
+			.header-body-right{
+				float: right;
+				line-height: 51px;
+				text-align: center;
+				width: 120px;
+				background: rgb(0,193,222);
+			}
+			.header-body-right:hover{
+				cursor: pointer;
+				background: skyblue;
+			}
+			.header-bottom{
+				position: absolute;
+				top: 500px;
+				left: 0;
+				width: 100%;
+				height: 140px;
+				background-color: hsla(0,0%,100%,.1);
+			}
+			.header-bottom ul{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.header-bottom li{
+				float: left;
+				padding: 30px 20px;
+				width: 198px;
+				line-height: 26.9px;
+				border-color: rgb(64,66,74);
+				border-style: solid;
+				border-width: 0 1px;
+				cursor: pointer;
+			}
+			.header-bottom li:hover{
+				background: rgb(64,66,74);
+			}
+			.header-bottom h2{
+				font-size: 16px;
+			}
+			.header-bottom p{
+				color: rgb(175,176,180);
+			}
+			.bodyer{
+				width: 1200px;
+				padding: 30px 0;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.bodyer .p1{
+				font-size: 25px;
+				margin-top: 20px;
+			}
+			.bodyer .p2{
+				font-size: 16px;
+				margin-top: 15px;
+				color: black;
+				cursor: pointer;
+			}
+			.bodyer .p2:hover{
+				color: rgb(0,193,222);
+			}
+			.bodyer-bottom{
+				margin-top: 60px;
+			}
+			.bodyer-bottom div{
+				width: 240px;
+				text-align: cneter;
+				float: left;
+			}
+			.bodyer-bottom img{
+				width: 80px;
+				height: 80px;
+			}
+			.bodyer-bottom p{
+				color: black;
+				cursor: pointer;
+			}
+			.bodyer-bottom p:hover{
+				color: rgb(0,193,222);
+			}
+			.ecs{
+				overflow: hidden;
+				height: 400px;
+				background: rgb(245,245,246);
+			}
+			.ecs-container{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.ecs-left,.ecs-center{
+				float: left;
+			}
+			.ecs-left{
+				width: 320px;
+				padding: 40px;
+			}
+			.ecs p,.ecs a,.ecs h2{
+				color: black;
+			}
+			.ecs-left-div{
+				position: relative;
+				height: 150px;
+			}
+			.ecs-left-div img{
+				position: absolute;
+				top: 5px;
+				right: 175px;
+				width: 30px;
+				height: 12px;
+			}
+			.ecs-left-div h2{
+				font-size: 18px;
+				cursor: pointer;
+			}
+			.ecs-left-div h2:hover{
+				color: rgb(0,193,222);
+			}
+			.ecs-left-div p{
+				color: rgb(155,158,160);
+				margin: 10px 0;
+			}
+			.ecs-left-div a{
+				display: block;
+				height: 30px;
+				margin-top: 15px;
+				line-height: 30px;
+				text-align: center;
+				width: 100px;
+				border: black solid 1px;
+				cursor: pointer;
+			}
+			.ecs-left-div a:hover{
+				color: deepskyblue;
+				border-color: deepskyblue;
+			}
+			.ecs-center{
+				position: relative;
+				padding: 25px 25px 25px 0;
+			}
+			.ecs-center-img{
+				position: absolute;
+				top: 44px;
+				right: 225px;
+				width: 35px;
+				height: 12px;
+			}
+			.ecs-center-box{
+				height: 40px;
+				width: 320px;
+				padding: 15px;
+			}
+			.ecs-center-box:hover{
+				border: #eee solid 1px;
+				box-shadow: 0 0 0 1px #eee;
+				background: white;
+			}
+			.ecs-center-box a{
+				color: rgb(155,158,160);
+				font-size: 12px;
+			}
+			.center{
+				width: 1200px;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			.center-box{
+				float: left;
+				margin-top: 20px;
+				width: 240px;
+				height: 120px;
+				text-align: center;
+			}
+			.center-box img{
+				width: 80px;
+				height: 80px;
+			}
+			.center-box p{
+				color: black;
+				cursor: pointer;
+			}
+			.center-box p:hover{
+				color: rgb(0,193,222);
+			}
+			.center-a{
+				display: block;
+				clear: left;
+				color: black;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				width: 120px;
+				border: black solid 1px;
+				cursor: pointer;
+				margin: 350px  auto 40px;
+			}
+			.center-a:hover{
+				border-color: rgb(0,193,222);
+				color: rgb(0,193,222);
+			}
+			.four{
+				position: relative;
+				width: 100%;
+				height: 420px;
+				background: rgb(55,61,65);
+			}
+			.four-container{
+				width: 1440px;
+				margin: 0 auto;
+			}
+			.four-img{
+				float: left;
+				width: 288px;
+				height: 420px;
+			}
+			.four-position{
+				position: absolute;
+				left: 72px;
+				width: 1440px;
+				height: 420px;
+			}
+			.four-position-div{
+				position: relative;
+				float: left;
+				width: 288px;
+				height: 420px;
+				background: rgba(0,0,0,0.5);
+			}
+			.four-position-div:hover{
+				background: rgba(17,197,225,0.5);
+			}
+			.four-position-div img{
+				position: absolute;
+				top: 105px;
+				left: 105px;
+				width: 80px;
+				height: 80px;
+			}
+			.four-position-div p{
+				position: absolute;
+				top: 215px;
+				left: 80px;
+				font-size: 22px;
+				font-weight: bold;
+			}
+			.five{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.five h2,.five p{
+				color: black;
+			}
+			.five-text{
+				text-align: center;
+				margin: 80px;
+			}
+			.five-text h2{
+				font-size: 25px;
+				font-weight: normal;
+			}
+			.five-text p{
+				font-size: 16px;
+				line-height: 40px;
+				cursor: pointer;
+			}
+			.five-text p:hover{
+				color: rgb(0,193,222);
+			}
+			.five-img{
+				position: relative;
+				width: 400px;
+				height: 300px;
+				float: left;
+			}
+			.five-img-image{
+				position: absolute;
+				top: 40px;
+				left: 160px;
+				width: 75px;
+				height: 75px;
+				background: url(image/dongtu1.jpg) no-repeat;
+				background-size: 75px;
+			}
+			.five-img-image2{
+				position: absolute;
+				top: 40px;
+				left: 160px;
+				width: 75px;
+				height: 75px;
+				background: url(image/dongtu2.jpg) no-repeat;
+				background-size: 75px;
+			}
+			.five-img-image3{
+				position: absolute;
+				top: 40px;
+				left: 160px;
+				width: 75px;
+				height: 75px;
+				background: url(image/dongtu3.jpg) no-repeat;
+				background-size: 75px;
+			}
+			.five-img-image4{
+				position: absolute;
+				top: 40px;
+				left: 160px;
+				width: 75px;
+				height: 75px;
+				background: url(image/dongtu4.jpg) no-repeat;
+				background-size: 75px;
+			}
+			.five-img-image5{
+				position: absolute;
+				top: 40px;
+				left: 160px;
+				width: 75px;
+				height: 75px;
+				background: url(image/dongtu5.jpg) no-repeat;
+				background-size: 75px;
+			}
+			.five-img-image6{
+				position: absolute;
+				top: 40px;
+				left: 160px;
+				width: 75px;
+				height: 75px;
+				background: url(image/dongtu6.jpg) no-repeat;
+				background-size: 75px;
+			}
+			.five-img p{
+				font-size: 20px;
+				font-weight: bold;
+				margin-bottom: 15px;
+				cursor: pointer;
+			}
+			.five-img p:hover{
+				color: rgb(0,193,222);
+			}
+			.five-img-p{
+				position: absolute;
+				top: 130px;
+				left: 50px;
+				text-align: center;
+				width: 300px;
+			}
+			.five-img-p a{
+				display: inline-block;
+				margin: 5px;
+				cursor: pointer;
+				color: rgb(169,176,180);
+			}
+			.five-img-p a:hover{
+				color: rgb(0,193,222);
+			}
+			.five-img-p span{
+				color: rgb(169,176,180);
+			}
+			.six{
+				height: 600px;
+				background: rgb(245,245,245);
+				text-align: center;
+				overflow: hidden;
+			}
+			.six h2,.six p,.six a{
+				color: black;
+			}
+			.six-top{
+				margin-top: 80px;
+				margin-bottom: 60px;
+			}
+			.six-top h2{
+				font-size: 25px;
+				font-weight: normal;
+			}
+			.six-top p{
+				font-size: 16px;
+				line-height: 40px;
+				cursor: pointer;
+			}
+			.six-top p:hover{
+				color: rgb(0,193,222);
+			}
+			.six-bottom{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.six-bottom-img{
+				float: left;
+				height: 240px;
+				width: 378px;
+				margin: 10px;
+				background: white;
+				border: rgb(197,216,219) solid 1px;
+				overflow: hidden;
+				cursor: pointer;
+			}
+			.six-bottom-img img{
+				width: 380px;
+				height: 170px;
+			}
+			.six-bottom-img a{
+				line-height: 70px;
+			}
+			.six-bottom-a{
+				padding: 0 10px;
+				float: left;
+				height: 56px;
+				width: 360px;
+				margin: 10px;
+				text-align: left;
+			}
+			.six-bottom-a li{
+				line-height: 25px;
+				color: black;
+				cursor: pointer;
+			} 
+			.six-bottom-a li:hover{
+				color: rgb(0,193,222);
+			}
+			.seven{
+				height: 100px;
+				background: rgb(0,193,222);
+				text-align: center;
+				line-height: 100px;
+			}
+			.seven a{
+				font-size: 25px;
+			}
+			.eight-top h2,.eight-top p,.eight-top a{
+				color: black;
+			}
+			.eight{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.eight-top{
+				text-align: center;
+				margin-top: 80px;
+				margin-bottom: 60px;
+			}
+			.eight-top h2{
+				font-size: 25px;
+				font-weight: normal;
+			}
+			.eight-top p{
+				font-size: 16px;
+				line-height: 40px;
+				cursor: pointer;
+			}
+			.eight-top p:hover{
+				color: rgb(0,193,222);
+			}
+			.eight-bottom-img{
+				text-align: center;
+			}
+			.eight-bottom-img a{
+				color: black;
+				vertical-align: middle;
+				font-size: 13px;
+				cursor: pointer;
+			}
+			.eight-bottom-img img{
+				height: 50px;
+				width: 50px;
+				vertical-align: middle;
+				margin-left: 30px;
+				margin-right: 20px;
+			}
+			.nine{
+				width: 1200px;
+				margin: 100px auto;
+				overflow: hidden;
+			}
+			.nine h2,.nine p{
+				color: black;
+			}
+			.nine-top{
+				text-align: center;
+				margin-top: 80px;
+				margin-bottom: 60px;
+			}
+			.nine-top h2{
+				font-size: 25px;
+				font-weight: normal;
+			}
+			.nine-top p{
+				font-size: 16px;
+				line-height: 40px;
+				cursor: pointer;
+			}
+			.nine-top p:hover{
+				color: rgb(0,193,222);
+			}
+			.nine-bottom div{
+				float: left;
+				width: 240px;
+				text-align: center;
+			}
+			.nine-bottom img{
+				width: 160px;
+				height: 87px;
+			}
+			.ten{
+				height: 100px;
+				padding: 50px 0;
+				background: rgb(0,193,222);
+				text-align: center;
+			}
+			.ten p{
+				font-size: 25px;
+				line-height: 60px;
+			}
+			.ten button{
+				font-size: 16px;
+				width: 120px;
+				height: 38px;
+				background: rgb(0,193,222);
+				border: white solid 1px;
+				cursor: pointer;
+			}
+			.ten button:hover{
+				background: white;
+				color: rgb(0,193,222);
+			}
+			.bottom{
+				overflow: hidden;
+				padding: 30px 0;
+				background: rgb(55,61,65);
+			}
+			.bottom-container{
+				overflow: hidden;
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.bottom-left{
+				position: relative;
+				float: left;
+				width: 299px;
+				height: 280px;
+				border-right: rgb(75,80,84) solid 1px;
+			} 
+			.bottom-left img{
+				width: 50px;
+				height: 41px;
+				position: absolute;
+				left: 20px;
+			}
+			.bottom-left-div{
+				width: 200px;
+				margin-left: 100px;
+			}
+			.bottom-left h3{
+				font-size: 16px;
+				font-weight: normal;
+			}
+			.bottom-left h2{
+				margin-top: 10px;
+				font-size: 20px;
+				font-weight: normal;
+			}
+			.bottom-left ul{
+				margin-top: 25px;
+			}
+			.bottom-left ul li{
+				color: rgb(155,158,160);
+				line-height: 30px;
+				cursor: pointer;
+			}
+			.bottom-left ul li:hover{
+				color: rgb(0,193,222);
+			}
+			.bottom-right{
+				float: left;
+				width: 900px;
+				height: 280px;
+			}
+			.bottom-center{
+				clear: left;
+				height: 95px;
+				padding: 15px 0;
+				margin:  0 50px;
+				border-top:  rgb(75,80,84) solid 1px;
+				border-bottom:  rgb(75,80,84) solid 1px;
+			}
+			.bottom-right-li{
+				float: left;
+				margin-left: 100px;
+			}
+			.bottom-right-li h2{
+				font-size: 13px;
+			}
+			.bottom-right-ul2 li{
+				margin-top: 10px;
+				font-size: 12px;
+				color: rgb(155,158,160);
+				cursor: pointer;
+			}
+			.bottom-right-ul2 li:hover{
+				color: rgb(0,193,222);
+			}
+			.bottom-top-container{
+				margin-bottom: 30px;
+			}
+			.bottom-center-ul2 li{
+				color: rgb(115,119,122);
+				float: left;
+				margin-left: 54px;
+				cursor: pointer;
+			}
+			.bottom-center-ul2 li:hover{
+				color: rgb(0,193,222);
+			}
+			.bottom-center-li h2{
+				color: rgb(155,158,160);
+				float: left;
+				clear: left;
+			}	
+			.bottom-center-li{
+				line-height: 30px;
+			}	
+			.bottom-bottom{
+				padding: 0 45px;
+			}
+			.bottom-bottom-top a{
+				font-size: 16px;
+				margin-right: 30px;
+				color: rgb(155,158,160);
+				line-height: 100px;
+				cursor: pointer;
+			}	
+			.bottom-bottom-top a:hover{
+				color: rgb(0,193,222);
+			}
+			.bottom-bottom-center a{
+				color: rgb(115,119,122);
+				margin-right: 10px;
+				line-height: 30px;
+				cursor: pointer;
+			}
+			.bottom-bottom-center a:hover{
+				color: rgb(0,193,222);
+			}
+			.bottom-bottom-bottom a{
+				color: rgb(115,119,122);
+				vertical-align: middle;
+				cursor: pointer;
+			}
+			.bottom-bottom-bottom img{
+				vertical-align: middle;	
+			}
+			.fix{
+				text-align: center;
+				position: fixed;
+				top: 400px;
+				right: 15px;
+				width: 30px;
+				padding: 5px 10px;
+				height: 120px;
+				background: rgb(51,205,229);
+				box-shadow: 0 6px 12px 0 rgba(0,0,0,.15) ;
+			}
+			.fix img{
+				width: 30px;
+				height: 20px;
+			}
+			.fix:hover +.fix-div{
+				display: block;
+			}
+			.fix-div:hover{
+				display: block;
+			}
+			.fix-div{
+				display: none;
+				width: 300px;
+				height: 205px;
+				padding: 10px;
+				background: white;
+				position: fixed;
+				top: 305px;
+				margin: 25px;
+				right: 60px;
+				box-shadow: 0 6px 12px 0 rgba(0,0,0,.15);
+			}
+			.fix-div1{
+				width: 300px;
+				height: 68px;
+			}
+			.fix-div1 a{
+				line-height: 25px;
+				color: black;
+				font-weight: bold;
+				cursor: pointer;
+			}
+			.fix-div1 a:hover{
+				color: rgb(0,193,222);
+			}
+			.fix-div1 span{
+				color: rgb(155,158,160);
+				font-size: 12px;
+			}
+			.fix-div-img img{
+				width: 24px;
+				height: 25px;
+			}
+			.fix-div-img{
+				float: left;
+				line-height: 68px;
+				margin-left: 10px;
+			}
+			.fix-div-a{
+				float: left;
+				margin-left: 20px;
+			}
